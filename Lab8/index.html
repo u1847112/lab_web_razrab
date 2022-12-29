@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base-mobilFirst.css">
+    <link rel="stylesheet" href="./css/mobilFirst-Index.css">
+    <link rel="stylesheet" href="./css/adaptiv-1200+.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Лабараторная работа №8</title>
+</head>
+<body>
+    <div id="add">
+    <header class="header">
+        <div class="logo">
+            <img src="./material/BlogLogo.png" alt="">
+        </div>
+        <div class="adaptive-menu">
+            <img id="menu" src="./material/Union.png" alt="">
+        </div>
+        <div class="links">
+            <a id="login" href="#"><img src="./material/Profile.png" alt="">
+                Войти</a>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <div class="ground-modal">
+        <div class="modal">
+            <div class="top-modal">
+                <div class="dnd-zone">
+                    <span>Вход</span>
+                </div>
+                <img id="close-modal" src="./material/Close Icon.png" alt="">
+            </div>
+            <div class="last-modal">
+                <form action="" method="post">
+                    <div class="block">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login">
+                    </div>
+                    <div class="block">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <div class="other">
+                        <button>Войти</button>
+                        <button>Забыли пароль?</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main-block">
+            <div class="post-block">
+            <h1>Последние публикации</h1>
+            <div class="main-catalog">
+                <div v-for="publish in post_iteam" class="iteam">
+                    <img v-bind:src="publish.image" alt="">
+                    <div class="text-block">
+                        <span class="titel">{{publish.title}}</span>
+                        <span class="info">{{publish.intro}}</span>
+                        <div class="category-item">
+                            <div class="category" v-for="label in publish.labels">{{label}}</div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="btn-add">
+                <button>Загрузить ещё 6</button>
+            </div>
+        </div>
+    </div>
+        <div class="main-category">
+            <div class="link-category">
+                <span>Рубрики</span>
+                <ul>
+                    <li><a href="#">Обучение</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Figma</a></li>
+                    <li><a href="#">Консоль</a></li>
+                    <li><a href="#">Git</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="links-footer">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="label-inc">
+            © Blog, 2022
+        
+    </footer>
+</div>
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/axios.min.js.map"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/adaptive-menu.js"></script>
+</body>
+</html>
