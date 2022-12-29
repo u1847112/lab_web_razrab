@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base-mobilFirst.css">
+    <link rel="stylesheet" href="./css/mobilFirst-login.css">
+    <link rel="stylesheet" href="./css/adaptiv-1200+.css">
+    <title>Лабараторная работа №5 login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./material/BlogLogo.png" alt="">
+        </div>
+        <div class="adaptive-menu">
+            <img src="./material/Union.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#"><img src="./material/Profile.png" alt="">
+            Войти</a>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <div class="main-block">
+            <h1>Регистрация</h1>
+            <form action="" method="post">
+                <div class="block">
+                    <div class="left">
+                        <label for="first-name">Имя</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="right">
+                        <label for="last-name">Фамилия</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="left">
+                        <label for="login-name">Логин *</label>
+                        <input type="text" id="login-name" required pattern="[a-zA-Z@+-_]+" minlength="5" maxlength="150">
+                        <span class="errors-login error">
+                            <span> <img src="" alt=""> Только буквы, цифры и символы @.+-_</span>
+                            <span> <img src="" alt=""> Не более 150 символов</span>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <label for="Email-name">E-mail</label>
+                        <input type="text" id="Email-name">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="left">
+                        <label for="first-password">Пароль *</label>
+                        <input type="password" id="first-password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <span class="errors-fisrt-pass error">
+                            <span> <img src="" alt=""> Минимум 8 символов</span>
+                            <span> <img src="" alt=""> Не может состоять только из цифр</span>
+                            <span> <img src="" alt=""> Не должен совпадать с логином</span>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <label for="last-password">Подтверждение пароля *</label>
+                        <input type="password" id="last-password" required>
+                        <span class="errors-last-pass error">
+                            <span> <img src="" alt=""> Пароли не совпадают</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Даю своё согласие на обработку персональных данных</label>
+                </div>
+                <div class="submit">
+                    <button type="submit">Зарегистрировать</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-footer">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="label-inc">
+            © Blog, 2022
+        </div>
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+</html>

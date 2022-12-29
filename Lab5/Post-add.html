@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base-mobilFirst.css">
+    <link rel="stylesheet" href="./css/mobilFirst-Post.css">
+    <link rel="stylesheet" href="./css/adaptiv-1200+.css">
+    <title>Лабараторная работа №5 Post</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./material/BlogLogo.png" alt="">
+        </div>
+        <div class="adaptive-menu">
+            <img src="./material/Union.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#"><img src="./material/Profile.png" alt="">
+                @UserAccountLogin</a>
+            <button>Новая запись</button>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <div class="main-block">
+            <h1>Добавить запись</h1>
+            <form action="" method="post">
+                <div class="block">
+                    <label for="titel">Заголовок</label>
+                    <input type="text" id="titel" maxlength="255">
+                </div>
+                <div class="block">
+                    <label for="Text">Текст</label>
+                    <textarea id="Text"></textarea>
+                </div>
+                <div class="block">
+                    <label for="category-select"></label>
+                    <select id="category-select">
+                        <option value="0">Без категории</option>
+                        <option value="1">Категория 1</option>
+                        <option value="2">Категория 2</option>
+                    </select>
+                </div>
+                <div class="img">
+                    <input type="file" id="img-file" multiple accept="image/*">
+                    <label for="img-file"><img src="./material/Vector (Stroke).png" alt=""> Прикрепить файл изображения</label>
+                </div>
+                <div class="submit">
+                    <button type="submit">Опубликовать</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-footer">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="label-inc">
+            © Blog, 2022
+        </div>
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@media screen and (min-width:1200px){
+
+    body{
+        margin: 40px;
+    }
+    .main-catalog-list{
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .iteam{
+        max-width: 30%;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iteam-logo{
+        width: 200px;
+    }
+}

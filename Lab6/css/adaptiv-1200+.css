@@ -1,0 +1,31 @@
+@media screen and (min-width: 1200px) {
+    
+    header{
+        padding: 15px 60px 16px 60px;
+    }
+    
+    .adaptive-menu{
+        display: none;
+    }
+
+    .links{
+        display: flex;
+    }
+
+    main{
+        margin: 60px;
+    }
+    
+    .main-block form{
+        padding: 40px;
+    }
+
+    footer{
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+
+    .submit button{
+        width: 186px;
+    }
+}

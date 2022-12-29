@@ -1,0 +1,71 @@
+.block label{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+    margin-bottom: 4px;
+}
+
+.block input, textarea, select{
+    width: 100%;
+    display: flex;
+    padding: 24px 0px 24px 24px;
+    gap: 10px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+textarea{
+    min-height: 256px;
+    max-width: 100%;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+}
+
+.img>input{
+    display: none;
+}
+
+.img>label{
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #624C90;
+    cursor: pointer;
+    border: 1px solid #624C90;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+    .links button{
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        padding: 12px 20px;
+        gap: 10px;
+        background: #FFFFFF;
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #553B8B;
+        border: none;
+    }
+
+    .img>label{
+        width: 362px;
+    }
+}

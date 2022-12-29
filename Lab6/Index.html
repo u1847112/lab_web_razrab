@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base-mobilFirst.css">
+    <link rel="stylesheet" href="./css/mobilFirst-Index.css">
+    <link rel="stylesheet" href="./css/adaptiv-1200+.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Лабараторная работа №6</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./material/BlogLogo.png" alt="">
+        </div>
+        <div class="adaptive-menu">
+            <img id="menu" src="./material/Union.png" alt="">
+        </div>
+        <div class="links">
+            <a id="login" href="#"><img src="./material/Profile.png" alt="">
+                Войти</a>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+    </header>
+    <div class="ground-modal">
+        <div class="modal">
+            <div class="top-modal">
+                <div class="dnd-zone">
+                    <span>Вход</span>
+                </div>
+                <img id="close-modal" src="./material/Close Icon.png" alt="">
+            </div>
+            <div class="last-modal">
+                <form action="" method="post">
+                    <div class="block">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login">
+                    </div>
+                    <div class="block">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <div class="other">
+                        <button>Войти</button>
+                        <button>Забыли пароль?</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main-block">
+            <div class="post-block">
+            <h1>Последние публикации</h1>
+            <div class="main-catalog">
+                <div class="iteam">
+                    <img src="./material/image 1.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Работа с Git в Visual Studio Code</span>
+                        <span class="info">Один из способов работать с Гитом.</span>
+                        <div class="category-item">
+                            <div class="category">Git</div>
+                            <div class="category">Консоль</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./material/image 2.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Adobe покупают Фигму. Всё пропало?</span>
+                        <span class="info">Не факт, но есть разные мнения.</span>
+                        <div class="category-item">
+                            <div class="category">Figma</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./material/image 3.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Все научились программировать. А дальше-то что?</span>
+                        <span class="info">Ученье — свет.</span>
+                        <div class="category-item">
+                            <div class="category">Обучение</div>
+                            <div class="category">Карьера</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./material/image 4.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Мне тяжело учиться, кто поможет?</span>
+                        <span class="info">Попали в патовую ситуацию? Тогда кликайте на статью.</span>
+                        <div class="category-item">
+                            <div class="category">Обучение</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./material/image 5.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Ключевые навыки фронтендеров в 2022</span>
+                        <span class="info">Ежегодное исследование рынка от HTML Academy.</span>
+                        <div class="category-item">
+                            <div class="category">Обучение</div>
+                            <div class="category">Карьера</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iteam">
+                    <img src="./material/image 6.png" alt="">
+                    <div class="text-block">
+                        <span class="titel">Фронтенд-новости</span>
+                        <span class="info">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</span>
+                        <div class="category-item">
+                            <div class="category">Новости</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-add">
+                <button>Загрузить ещё 6</button>
+            </div>
+        </div>
+    </div>
+        <div class="main-category">
+            <div class="link-category">
+                <span>Рубрики</span>
+                <ul>
+                    <li><a href="#">Обучение</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Figma</a></li>
+                    <li><a href="#">Консоль</a></li>
+                    <li><a href="#">Git</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-footer">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <div class="label-inc">
+            © Blog, 2022
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/adaptive-menu.js"></script>
+</body>
+</html>
